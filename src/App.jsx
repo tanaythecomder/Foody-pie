@@ -1,12 +1,10 @@
 import Home from "./Screens/Home"
-
-
 import {
   BrowserRouter as Router,
   Routes,
   Route
 }
-  from "react-router-dom"
+from "react-router-dom"
 import Login from "./Screens/Login"
 import "bootstrap"
 import Signup from "./Screens/Signup"

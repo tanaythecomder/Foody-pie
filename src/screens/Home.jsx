@@ -114,10 +114,10 @@ export default function Home() {
 
       <div className="container">
         {Categorydata != []
-          ? Categorydata?.map((categ) => {
+          ? Categorydata?.map((categ,index) => {
 
               return (
-                <div className="row mb-3">
+                <div className="row mb-3" key={index}>
                   <div key={categ.id} className="fs-3 m-3">
                     {categ.CategoryName}
                   </div>
