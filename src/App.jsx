@@ -9,9 +9,6 @@ import {
 from "react-router-dom"
 import Login from "./screens/Login"
 import "bootstrap"
-
-
-import "react-bootstrap"
 import Signup from "./screens/Signup"
 import { CartProvider } from "./components/ContextReducer"
 import OrderHistory from "./screens/Orderhistory"
@@ -22,7 +19,6 @@ function App() {
   return(
 
     <CartProvider>
-
     <Router>
       <div> 
         <Routes>

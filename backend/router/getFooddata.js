@@ -3,6 +3,7 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/getfooddata', (req, res)=>{
+    console.log("yes")
     try {
         res.send([global.food_data, global.category_data])
     } catch (error) {

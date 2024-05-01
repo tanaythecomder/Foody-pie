@@ -19,6 +19,7 @@ export default function Home() {
       },
     });
     response = await response.json();
+    console.log(response)
     return response;
   };
   useEffect(() => {

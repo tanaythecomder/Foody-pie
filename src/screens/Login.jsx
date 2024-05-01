@@ -20,7 +20,7 @@ export default function Login() {
 
         const json= await response.json()
 
-        // console.log(json.success)
+        console.log(json)
        
         if(!json.success){
           alert("Enter valid Credentials")

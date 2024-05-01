@@ -24,6 +24,7 @@ router.post('/createuser',
             location: req.body.location,
             password: secPassword
         }).then(()=>{
+            console.log("created account")
             res.json({success:true})
         }).catch((err)=>{
             res.json({success:err})
