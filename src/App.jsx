@@ -1,4 +1,4 @@
-import Home from "./screens/Home"
+import Home from "./Screens/Home"
 
 
 import {
@@ -6,29 +6,29 @@ import {
   Routes,
   Route
 }
-from "react-router-dom"
-import Login from "./screens/Login"
+  from "react-router-dom"
+import Login from "./Screens/Login"
 import "bootstrap"
-import Signup from "./screens/Signup"
+import Signup from "./Screens/Signup"
 import { CartProvider } from "./components/ContextReducer"
-import OrderHistory from "./screens/Orderhistory"
+import OrderHistory from "./Screens/Orderhistory"
 
 // import './App.css'
 function App() {
-  
-  return(
+
+  return (
 
     <CartProvider>
-    <Router>
-      <div> 
-        <Routes>
-          <Route exact path = "/" element = {<Home/>} />
-          <Route exact path = "/login" element = {<Login/>}/>
-          <Route exact path = "/signup" element = {<Signup/>}/>
-          <Route exact path = "/myorders" element = {<OrderHistory/>}/>
-        </Routes>
-      </div>
-    </Router>
+      <Router>
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/signup" element={<Signup />} />
+            <Route exact path="/myorders" element={<OrderHistory />} />
+          </Routes>
+        </div>
+      </Router>
     </CartProvider>
   )
 }

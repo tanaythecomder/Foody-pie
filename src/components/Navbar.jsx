@@ -3,18 +3,18 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/cart.png"
 import Modal from "../../Modal";
-import Cart from '../screens/Cart'
-import Badge  from 'react-bootstrap/Badge';
+import Cart from '../Screens/Cart'
+import Badge from 'react-bootstrap/Badge';
 import { useCartState } from "./ContextReducer";
 
 export default function () {
   let data = useCartState()
   const [ViewC, setViewC] = useState(false)
   const navigate = useNavigate();
-const handleclick = ()=>{
-  localStorage.removeItem("authToken")
-  navigate("/")
-}
+  const handleclick = () => {
+    localStorage.removeItem("authToken")
+    navigate("/")
+  }
 
   return (
     <div>
@@ -23,7 +23,7 @@ const handleclick = ()=>{
           className="navbar-brand fs-3 fst-italic bg-danger bg-gradient 
  rounded info mx-2 p-2"
           to="/"
-          
+
         >
           FooDy~zone
         </Link>
@@ -67,17 +67,17 @@ const handleclick = ()=>{
             </div>
           ) : (
             <div className="d-flex">
-              
-              <button className="btn btn-warning d-flex" style={{backgroundImage: `url(${logo})`}} onClick={()=>setViewC(true)}  >
-      
+
+              <button className="btn btn-warning d-flex" style={{ backgroundImage: `url(${logo})` }} onClick={() => setViewC(true)}  >
+
                 Cart {" "}
-                {data?.length!=0? <Badge > {data?.length} </Badge>:null}
+                {data?.length != 0 ? <Badge > {data?.length} </Badge> : null}
               </button>
-                 
-              {ViewC? 
-              <Modal onClose={()=> setViewC(false)}>
-                <Cart/>
-              </Modal> :""}
+
+              {ViewC ?
+                <Modal onClose={() => setViewC(false)}>
+                  <Cart />
+                </Modal> : ""}
               <button className="btn btn-primary text-danger mx-1" to="/signup" onClick={handleclick} >
                 Logout
               </button>
