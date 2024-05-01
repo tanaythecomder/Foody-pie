@@ -1,4 +1,4 @@
-import Home from "./Screens/Home"
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,6 +10,7 @@ import "bootstrap"
 import Signup from "./Screens/Signup"
 import { CartProvider } from "./components/ContextReducer"
 import OrderHistory from "./Screens/Orderhistory"
+import Home from "./Screens/Home"
 
 // import './App.css'
 function App() {
