@@ -1,10 +1,9 @@
-import { Button } from "bootstrap";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/cart.png"
 import Modal from "../../Modal";
 import Cart from '../Screens/Cart'
-import Badge from 'react-bootstrap/Badge';
+// import Badge from 'react-bootstrap/Badge';
 import { useCartState } from "./ContextReducer";
 
 export default function () {
@@ -71,7 +70,7 @@ export default function () {
               <button className="btn btn-warning d-flex" style={{ backgroundImage: `url(${logo})` }} onClick={() => setViewC(true)}  >
 
                 Cart {" "}
-                {data?.length != 0 ? <Badge > {data?.length} </Badge> : null}
+                {data?.length != 0 ? <div  > {data?.length} </div> : null}
               </button>
 
               {ViewC ?
