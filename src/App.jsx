@@ -9,7 +9,7 @@ import Login from "./screens/Login"
 import "bootstrap"
 import Signup from "./screens/Signup"
 import { CartProvider } from "./components/ContextReducer"
-import OrderHistory from "./Screens/Orderhistory"
+import OrderHistory from "./screens/Orderhistory"
 import Home from "./screens/Home"
 
 // import './App.css'
