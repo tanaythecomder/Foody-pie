@@ -8,7 +8,7 @@ require('dotenv').config()
 
 connectDB();
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: '*'
 }));
 // app.use((req,res, next)=>{
 //     // console.log('In 1')
