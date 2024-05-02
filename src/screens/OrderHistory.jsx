@@ -20,6 +20,8 @@ export default function OrderHistory() {
         }).then(async (res) => {
             let response = await res.json()
             await setorderData(response)
+
+            console.log(response)
         })
     }
 
@@ -36,7 +38,7 @@ export default function OrderHistory() {
             <div className='container'>
                 <div className='row'>
 
-                    {orderData!== {} ? Array(orderData).map(data => {
+                    {orderData !== null ? Array(orderData).map(data => {
                         return (
                             data.orderData ?
                                 data.orderData.order_data.slice(0).reverse().map((item) => {

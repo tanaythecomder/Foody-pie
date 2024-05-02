@@ -27,6 +27,7 @@ router.post('/createuser',
             console.log("created account")
             res.json({success:true})
         }).catch((err)=>{
+            console.log(err)
             res.json({success:err})
         })
     
