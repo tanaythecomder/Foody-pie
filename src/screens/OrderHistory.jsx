@@ -36,7 +36,7 @@ export default function OrderHistory() {
             <div className='container'>
                 <div className='row'>
 
-                    {orderData !== {} ? Array(orderData).map(data => {
+                    {orderData!== {} ? Array(orderData).map(data => {
                         return (
                             data.orderData ?
                                 data.orderData.order_data.slice(0).reverse().map((item) => {
