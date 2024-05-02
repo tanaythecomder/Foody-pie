@@ -10,7 +10,7 @@ export default function Login() {
         console.log("123")
         e.preventDefault();
         // console.log(JSON.stringify({name:cred.name ,email:cred.email, password:cred.password, location:cred.geolocation}))
-        const response = await fetch("http://localhost:5000/api/loginuser",{ 
+        const response = await fetch("https://foody-pie.onrender.com/api/loginuser",{ 
           method : 'POST',
           headers:{
             'Content-Type':'application/json'

@@ -8,7 +8,7 @@ export default function OrderHistory() {
 
     const fetchOrderHistory = async () => {
         console.log(localStorage.getItem('userEmail'))
-        await fetch("http://localhost:5000/api/getOrderHistory", {
+        await fetch("https://foody-pie.onrender.com/api/getOrderHistory", {
     
             method: 'POST',
             headers: {
