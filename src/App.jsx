@@ -4,13 +4,13 @@ import {
   Routes,
   Route
 }
-from "react-router-dom"
-import Login from "./Screens/Login"
+  from "react-router-dom"
+import Login from "./screens/Login"
 import "bootstrap"
-import Signup from "./Screens/Signup"
+import Signup from "./screens/Signup"
 import { CartProvider } from "./components/ContextReducer"
 import OrderHistory from "./Screens/Orderhistory"
-import Home from "./Screens/Home"
+import Home from "./screens/Home"
 
 // import './App.css'
 function App() {
