@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/cart.png"
 import Modal from "../../Modal";
-import Cart from '../Screens/Cart'
+import Cart from '../screens/Cart'
 // import Badge from 'react-bootstrap/Badge';
 import { useCartState } from "./ContextReducer";
 
