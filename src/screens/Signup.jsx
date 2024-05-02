@@ -2,7 +2,7 @@ import React from "react";
 import { Link, json, useNavigate } from "react-router-dom";
 import {useState} from 'react'
 
-export default function () {
+export default function Signup() {
   const navigate = useNavigate()
   const [cred, setcred] = useState({name:"", email:"", password:"", geolocation:""})
 
